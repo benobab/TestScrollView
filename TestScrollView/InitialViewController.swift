@@ -13,6 +13,7 @@ class InitialViewController: UIViewController {
     @IBOutlet weak var slider1: UISlider!
     @IBOutlet weak var slider2: UISlider!
     
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +26,15 @@ class InitialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    let step: Float = 1
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        let roundedValue = round(sender.value / step) * step
+        sender.value = roundedValue
+        self.label.text = "\(sender.value)"
+        // Do something else with the value
+        
+    }
 
     /*
     // MARK: - Navigation

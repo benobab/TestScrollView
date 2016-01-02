@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="tJi-03-BL3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hMN-xw-PJR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iL3-49-6ca">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="1500"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4h-2W-zMz">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -139,11 +139,14 @@
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                         <animations/>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="Group2" maximumValueImage="Group2" translatesAutoresizingMaskIntoConstraints="NO" id="kIt-Xj-fSC">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" minimumValueImage="Group2" maximumValueImage="Group2" translatesAutoresizingMaskIntoConstraints="NO" id="kIt-Xj-fSC">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                         <animations/>
                                         <color key="minimumTrackTintColor" red="1" green="0.12540821620631071" blue="0.14141643659062841" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="maximumTrackTintColor" red="0.32867293068941172" green="1" blue="0.49145982890718742" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="1YR-rd-bnf" eventType="valueChanged" id="nV6-Ed-tQW"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <animations/>
@@ -178,24 +181,24 @@
                                         <exclude reference="kIt-Xj-fSC"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="ZYx-sR-pMd"/>
-                                        <exclude reference="h0C-aD-ijA"/>
                                         <exclude reference="7Pq-BF-4aY"/>
                                         <exclude reference="rma-eE-24V"/>
                                         <exclude reference="6mx-0J-Aso"/>
                                         <exclude reference="Zci-kl-kfF"/>
                                         <exclude reference="e7o-c3-mx9"/>
                                         <exclude reference="fc8-sv-ntM"/>
-                                        <exclude reference="cNH-oL-TvF"/>
-                                        <exclude reference="w5C-RR-w2K"/>
-                                        <exclude reference="7nm-7H-rrn"/>
-                                        <exclude reference="Rcf-Iw-gWP"/>
                                         <exclude reference="DzM-ZP-0wg"/>
                                         <exclude reference="abU-SA-pFA"/>
+                                        <exclude reference="ZYx-sR-pMd"/>
+                                        <exclude reference="h0C-aD-ijA"/>
                                         <exclude reference="6im-u2-a2T"/>
                                         <exclude reference="9Du-50-M0G"/>
                                         <exclude reference="nE4-7l-zdy"/>
                                         <exclude reference="nEZ-f3-Cmd"/>
+                                        <exclude reference="cNH-oL-TvF"/>
+                                        <exclude reference="w5C-RR-w2K"/>
+                                        <exclude reference="7nm-7H-rrn"/>
+                                        <exclude reference="Rcf-Iw-gWP"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -209,24 +212,24 @@
                                         <include reference="kIt-Xj-fSC"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="ZYx-sR-pMd"/>
-                                        <include reference="h0C-aD-ijA"/>
                                         <include reference="7Pq-BF-4aY"/>
                                         <include reference="rma-eE-24V"/>
                                         <include reference="6mx-0J-Aso"/>
                                         <include reference="Zci-kl-kfF"/>
                                         <include reference="e7o-c3-mx9"/>
                                         <include reference="fc8-sv-ntM"/>
-                                        <include reference="cNH-oL-TvF"/>
-                                        <include reference="w5C-RR-w2K"/>
-                                        <include reference="7nm-7H-rrn"/>
-                                        <include reference="Rcf-Iw-gWP"/>
                                         <include reference="DzM-ZP-0wg"/>
                                         <include reference="abU-SA-pFA"/>
+                                        <include reference="ZYx-sR-pMd"/>
+                                        <include reference="h0C-aD-ijA"/>
                                         <include reference="6im-u2-a2T"/>
                                         <include reference="9Du-50-M0G"/>
                                         <include reference="nE4-7l-zdy"/>
                                         <include reference="nEZ-f3-Cmd"/>
+                                        <include reference="cNH-oL-TvF"/>
+                                        <include reference="w5C-RR-w2K"/>
+                                        <include reference="7nm-7H-rrn"/>
+                                        <include reference="Rcf-Iw-gWP"/>
                                     </mask>
                                 </variation>
                             </scrollView>
@@ -243,6 +246,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="1500"/>
                     <connections>
+                        <outlet property="label" destination="K4h-2W-zMz" id="KJo-Pr-qyl"/>
                         <outlet property="slider1" destination="kIt-Xj-fSC" id="er1-t4-iP3"/>
                         <outlet property="slider2" destination="pDD-yR-i5R" id="dUA-Im-E5Z"/>
                     </connections>
